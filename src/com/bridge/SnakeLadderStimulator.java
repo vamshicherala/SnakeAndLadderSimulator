@@ -33,7 +33,10 @@ public class SnakeLadderStimulator {
                 case 1:
                     System.out.println("**Ladder**");
                     PLAYERPOSITION = PLAYERPOSITION + diesRoll;
-                    System.out.println(PLAYERPOSITION);
+                    if (PLAYERPOSITION>100)
+                        System.out.println(playerPosition);
+                    else
+                        System.out.println(PLAYERPOSITION);
                     break;
                 case 0:
                     System.out.println("**Snake**");
