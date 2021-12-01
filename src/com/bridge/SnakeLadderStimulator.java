@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class SnakeLadderStimulator {
     static int PLAYERPOSITION = 0;
-
+    int noOfTimes=0;
     public static void main(String[] args) {
         System.out.println("*****Welcome to Snake and Ladder Stimulator*****");
         String name = "Vamshi";
@@ -24,6 +24,7 @@ public class SnakeLadderStimulator {
         int min =1;
         for (int i = 0; PLAYERPOSITION < 100; i++) {
             Random rand = new Random();
+            noOfTimes++;
             int diesRoll = min + rand.nextInt(6);
             System.out.println("Diesroll number: " + diesRoll);
             Random rand1 = new Random();
@@ -50,5 +51,6 @@ public class SnakeLadderStimulator {
                     System.out.println(PLAYERPOSITION);
             }
         }
+        System.out.println(noOfTimes);
     }
 }
